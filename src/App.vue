@@ -1,32 +1,39 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-card class="mx-auto">
+      <v-card-title>
+        <h1 class="display-1">GPPU - Login</h1>
+      </v-card-title>
+      <v-card-text>
+        <v-form>
+          <v-text-field label="Correo electronico"
+            prepend-icon="mdi-account-circle">
+          </v-text-field>
+          <v-text-field type="password" label="Contraseña"
+            prepend-icon="mdi-lock"
+            :type="showPassword ? 'text': 'password'"
+            :append-icon="showPassword ? 'mdi-eye' :  'mdi-eye-off'"
+            @click:append="showPassword=!showPassword">
+          </v-text-field>
+        </v-form>
+      </v-card-text>
+      <v-card-actions>
+        <v-btn color="success">Registrarme</v-btn>
+        <v-spacer></v-spacer>
+        <v-btn color="info">Iniciar sesion</v-btn>
+      </v-card-actions>
+    </v-card>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+import Vue from 'vue';
 
-#nav {
-  padding: 30px;
-}
+export default Vue.extend({
+  name: 'App',
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  data: () => ({
+    showPassword:true
+  }),
+});
+</script>
