@@ -73,12 +73,16 @@
 
 <script>
 import { ITEMS } from "@/global/itemsNav";
+import { mapActions } from "vuex"
 export default {
   name: "NavDrawer",
   data() {
     return {
       items: ITEMS
     };
+  },
+  methods:{
+    ...mapActions(['changeTheme'])
   }
 };
 </script>
