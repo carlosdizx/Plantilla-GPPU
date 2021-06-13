@@ -6,14 +6,19 @@
       </v-card-title>
       <v-card-text>
         <v-form>
-          <v-text-field label="Correo electronico"
-            prepend-icon="mdi-account-circle">
+          <v-text-field
+            label="Correo electronico"
+            prepend-icon="mdi-account-circle"
+          >
           </v-text-field>
-          <v-text-field type="password" label="Contraseña"
+          <v-text-field
+            type="password"
+            label="Contraseña"
             prepend-icon="mdi-lock"
-            :type="showPassword ? 'text': 'password'"
-            :append-icon="showPassword ? 'mdi-eye' :  'mdi-eye-off'"
-            @click:append="showPassword=!showPassword">
+            :type="showPassword ? 'text' : 'password'"
+            :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
+            @click:append="showPassword = !showPassword"
+          >
           </v-text-field>
         </v-form>
       </v-card-text>
@@ -27,13 +32,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue from "vue";
 
 export default Vue.extend({
-  name: 'App',
+  name: "App",
 
   data: () => ({
-    showPassword:true
-  }),
+    showPassword: true
+  })
 });
 </script>
