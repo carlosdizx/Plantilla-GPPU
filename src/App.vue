@@ -2,7 +2,7 @@
   <v-app>
     <v-card class="mx-auto">
       <v-card-title>
-        <h1 class="display-1">GPPU - Login</h1>
+        <img src="@/assets/logoLogin.png" height="220" width="220"alt="logo" class="display-1 ml-5" />
       </v-card-title>
       <v-card-text>
         <v-form>
