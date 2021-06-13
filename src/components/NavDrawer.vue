@@ -1,7 +1,7 @@
 <template>
   <v-card
     id="core-navigation-drawer"
-    absolute
+    permanent
     color="transparent"
     flat
     :right="$vuetify.rtl"
@@ -11,7 +11,7 @@
     v-bind="$attrs"
     height="100%"
   >
-    <v-navigation-drawer permanent>
+    <v-navigation-drawer fixed>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title>carlodiaz@umariana.edu.co</v-list-item-title>
@@ -73,7 +73,7 @@
 
 <script>
 import { ITEMS } from "@/global/itemsNav";
-import { mapActions } from "vuex"
+import { mapActions } from "vuex";
 export default {
   name: "NavDrawer",
   data() {
@@ -81,8 +81,8 @@ export default {
       items: ITEMS
     };
   },
-  methods:{
-    ...mapActions(['changeTheme'])
+  methods: {
+    ...mapActions(["changeTheme"])
   }
 };
 </script>
