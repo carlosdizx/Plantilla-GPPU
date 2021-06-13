@@ -1,5 +1,10 @@
 <template>
-  <Login />
+  <v-app>
+    <Login />
+    <router-link to="/dashboard">
+      <h1>Ir al dashboard</h1>
+    </router-link>
+  </v-app>
 </template>
 
 <script lang="ts">

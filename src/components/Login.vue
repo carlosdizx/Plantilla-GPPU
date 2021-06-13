@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto">
+  <v-card class="mt-5 mx-auto">
     <v-card-title>
       <img
         src="@/assets/logoLogin.png"
