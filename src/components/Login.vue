@@ -2,7 +2,7 @@
   <v-card class="mt-5 mx-auto">
     <v-card-title>
       <img
-        src="@/assets/logoLogin.png"
+        src="@/assets/GPPU.png"
         height="220"
         width="220"
         alt="logo"
