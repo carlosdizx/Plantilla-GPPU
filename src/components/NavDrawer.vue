@@ -4,8 +4,8 @@
 
     <v-list-item>
       <v-list-item-content>
-        <v-list-item-title>Carlos Ernesto Díaz Basante</v-list-item-title>
-        <v-list-item-subtitle>Estudiante</v-list-item-subtitle>
+        <v-list-item-title>{{ userTemplate.nombre }}</v-list-item-title>
+        <v-list-item-subtitle>{{ userTemplate.rol }}</v-list-item-subtitle>
       </v-list-item-content>
       <v-avatar v-if="numero === 1" color="indigo">
         <v-icon dark>mdi-account-circle</v-icon>
@@ -44,7 +44,12 @@ export default {
   data() {
     return {
       items: ITEMS,
-      numero: Math.floor(Math.random() * (2 - 1 + 1) + 1)
+      numero: Math.floor(Math.random() * (2 - 1 + 1) + 1),
+      userTemplate: {
+        nombre: "Carlos Ernesto Díaz Basante",
+        token: "soloUsoPostgreSQL",
+        rol: "Estudiante"
+      }
     };
   },
   computed: {
