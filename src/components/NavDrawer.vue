@@ -11,7 +11,7 @@
     v-bind="$attrs"
     height="100%"
   >
-    <v-navigation-drawer fixed>
+    <v-navigation-drawer absolute>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title>carlodiaz@umariana.edu.co</v-list-item-title>
