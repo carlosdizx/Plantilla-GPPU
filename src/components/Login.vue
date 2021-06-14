@@ -28,9 +28,13 @@
       </v-form>
     </v-card-text>
     <v-card-actions>
-      <v-btn color="success">Registrarme</v-btn>
+      <router-link to="/dashboard">
+        <v-btn color="info">Iniciar sesion</v-btn>
+      </router-link>
+      <router-link to="/">
+        <v-btn color="success">Registrarme</v-btn>
+      </router-link>
       <v-spacer></v-spacer>
-      <v-btn color="info">Iniciar sesion</v-btn>
     </v-card-actions>
   </v-card>
 </template>
