@@ -11,29 +11,13 @@
         <v-icon>mdi-export</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-navigation-drawer app v-model="navigation.default">
-      <v-list-item v-for="item in items" :key="item.title">
-        <v-row>
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
-          <router-link :to="item.link">
-            <v-row class="pt-4">
-              <v-list-item-content>
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
-              </v-list-item-content>
-            </v-row>
-          </router-link>
-        </v-row>
-      </v-list-item>
-    </v-navigation-drawer>
   </v-app>
 </template>
 
 <script>
 import NavDrawer from "@/components/NavDrawer";
 import { ITEMS } from "@/global/itemsNav";
-import { mapState,mapActions } from "vuex";
+import { mapState, mapActions } from "vuex";
 export default {
   name: "Toolbar",
   components: {
@@ -45,7 +29,7 @@ export default {
       items: ITEMS
     };
   },
-  computed:{
+  computed: {
     ...mapState(["navigation"])
   },
   methods: {

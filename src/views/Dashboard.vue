@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <Toolbar />
+    <NavDrawer />
   </v-app>
 </template>
 
