@@ -1,15 +1,17 @@
 <template>
   <v-app>
-    <NavDrawer />
+    <Toolbar />
   </v-app>
 </template>
 
 <script>
 import NavDrawer from "@/components/NavDrawer";
+import Toolbar from "@/components/Toolbar";
 export default {
   name: "Dashboard",
   components: {
-    NavDrawer
+    NavDrawer,
+    Toolbar
   }
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <v-card
     id="core-navigation-drawer"
-    permanent
+    absolute
     color="transparent"
     flat
     :right="$vuetify.rtl"
