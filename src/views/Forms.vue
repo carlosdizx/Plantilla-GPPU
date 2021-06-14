@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <ToolBarForms />
-    <FormEstudiante v-if="form.default === 1" />
-    <FormEmpresa v-if="form.default === 2" />
+    <FormEmpresa v-if="form.default === 1" />
+    <FormEstudiante v-if="form.default === 2" />
     <FormCoordinador v-if="form.default === 3" />
     <FormDirector v-if="form.default === 4" />
   </v-app>
