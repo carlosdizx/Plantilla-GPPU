@@ -1,5 +1,20 @@
 <template>
   <v-navigation-drawer app v-model="navigation.default">
+    <!--ITEMS DE NAVEGACION -->
+
+    <v-list-item>
+      <v-list-item-content>
+        <v-list-item-title>Carlos Ernesto Díaz Basante</v-list-item-title>
+        <v-list-item-subtitle>Estudiante</v-list-item-subtitle>
+      </v-list-item-content>
+      <v-avatar color="indigo">
+        <v-icon dark>mdi-account-circle</v-icon>
+      </v-avatar>
+    </v-list-item>
+
+    <v-divider></v-divider>
+    <!--ITEMS DE NAVEGACION -->
+    <v-list dense nav>
     <v-list-item v-for="item in items" :key="item.title">
       <v-row>
         <v-list-item-icon>
@@ -14,6 +29,7 @@
         </router-link>
       </v-row>
     </v-list-item>
+    </v-list>
   </v-navigation-drawer>
 </template>
 
