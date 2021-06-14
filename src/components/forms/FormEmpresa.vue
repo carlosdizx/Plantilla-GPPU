@@ -13,7 +13,7 @@
         >
         </v-file-input>
         <v-text-field
-          label="CC_Representante"
+          label="# Documento del representante"
           prepend-icon="mdi-card-account-details"
         />
         <v-file-input
