@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app dark src="@/assets/difuminado.jpg">
+    <v-app-bar app dark src="@/assets/difuminado_3.jpg">
       <v-app-bar-nav-icon @click="changeNavigation"></v-app-bar-nav-icon>
       <v-toolbar-title>GPPU</v-toolbar-title>
       <v-spacer></v-spacer>
