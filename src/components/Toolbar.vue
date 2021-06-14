@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app dark src="@/assets/difuminado.jpg">
-      <v-app-bar-nav-icon @click="menu = !menu"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="changeNavigation"></v-app-bar-nav-icon>
       <v-toolbar-title>GPPU</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
@@ -11,7 +11,7 @@
         <v-icon>mdi-export</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-navigation-drawer app v-model="menu">
+    <v-navigation-drawer app v-model="navigation.default">
       <v-list-item v-for="item in items" :key="item.title">
         <v-row>
           <v-list-item-icon>
@@ -33,6 +33,7 @@
 <script>
 import NavDrawer from "@/components/NavDrawer";
 import { ITEMS } from "@/global/itemsNav";
+import { mapState,mapActions } from "vuex";
 export default {
   name: "Toolbar",
   components: {
@@ -43,6 +44,12 @@ export default {
       menu: true,
       items: ITEMS
     };
+  },
+  computed:{
+    ...mapState(["navigation"])
+  },
+  methods: {
+    ...mapActions(["changeNavigation"])
   }
 };
 </script>

@@ -71,7 +71,7 @@ export default {
     };
   },
   methods: {
-    ...mapActions(["changeTheme"])
+    ...mapActions(["changeNavigation"])
   }
 };
 </script>

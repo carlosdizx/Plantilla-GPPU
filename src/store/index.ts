@@ -5,13 +5,16 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    dark: false
+    navigation: {
+      type:Boolean,
+      default:true
+    }
   },
   mutations: {
-    changeThemeApp: state => (state.dark = !state.dark)
+    changeNavigationBar: state => (state.navigation.default = !state.navigation.default)
   },
   actions: {
-    changeTheme: ({ commit }) => commit("changeThemeApp")
+    changeNavigation: ({ commit }) => commit("changeNavigationBar")
   },
   modules: {}
 });
