@@ -31,7 +31,7 @@
       <router-link to="/dashboard">
         <v-btn color="info">Iniciar sesion</v-btn>
       </router-link>
-      <router-link to="/">
+      <router-link to="/forms">
         <v-btn color="success">Registrarme</v-btn>
       </router-link>
       <v-spacer></v-spacer>

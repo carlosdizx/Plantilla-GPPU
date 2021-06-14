@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
 import Dashboard from "../views/Dashboard.vue";
+import Forms from "../views/Forms.vue";
 
 Vue.use(VueRouter);
 
@@ -20,6 +21,11 @@ const routes: Array<RouteConfig> = [
     path: "/dashboard",
     name: "Dashboard",
     component: Dashboard
+  },
+  {
+    path: "/forms",
+    name: "Forms",
+    component: Forms
   }
 ];
 
