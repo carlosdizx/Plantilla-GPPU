@@ -10,21 +10,21 @@
     </v-btn>
     <template v-slot:extension>
       <v-tabs align-with-title>
-        <v-tab>Empresa</v-tab>
-        <v-tab>Estudiante</v-tab>
-        <v-tab>Coordinador</v-tab>
-        <v-tab>Directivo</v-tab>
+        <v-tab @click="changeForm(1)">Empresa</v-tab>
+        <v-tab @click="changeForm(2)">Estudiante</v-tab>
+        <v-tab @click="changeForm(3)">Coordinador</v-tab>
+        <v-tab @click="changeForm(4)">Directivo</v-tab>
       </v-tabs>
     </template>
   </v-app-bar>
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
-  name: "ToolBarForms"
-}
+  name: "ToolBarForms",
+  methods: { ...mapActions(["changeForm"]) }
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

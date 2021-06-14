@@ -1,14 +1,15 @@
 <template>
   <v-app>
     <ToolBarForms />
-    <FormEstudiante />
-    <FormEmpresa />
-    <FormCoordinador />
-    <FormDirector />
+    <FormEstudiante v-if="form.default === 1" />
+    <FormEmpresa v-if="form.default === 2" />
+    <FormCoordinador v-if="form.default === 3" />
+    <FormDirector v-if="form.default === 4" />
   </v-app>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import ToolBarForms from "@/components/forms/ToolBarForms";
 import FormEmpresa from "@/components/forms/FormEmpresa";
 import FormEstudiante from "@/components/forms/FormEstudiante";
@@ -25,6 +26,9 @@ export default {
     FormEstudiante,
     FormCoordinador,
     FormDirector
+  },
+  computed: {
+    ...mapState(["form"])
   }
 };
 </script>
