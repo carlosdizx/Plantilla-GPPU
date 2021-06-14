@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import NavDrawer from "@/components/NavDrawer";
-import Toolbar from "@/components/Toolbar";
+import NavDrawer from "@/components/dashboard/NavDrawer";
+import Toolbar from "@/components/dashboard/Toolbar";
 export default {
   name: "Dashboard",
   components: {

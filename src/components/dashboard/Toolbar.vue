@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import NavDrawer from "@/components/NavDrawer";
+import NavDrawer from "./NavDrawer";
 import { ITEMS } from "@/global/itemsNav";
 import { mapState, mapActions } from "vuex";
 export default {
