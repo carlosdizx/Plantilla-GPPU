@@ -19,34 +19,35 @@
         <v-file-input
           accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps"
           label="Acreditacion (opcional)"
-        >
-        </v-file-input>
+        />
         <v-text-field
           label="Telefono - Celular"
           prepend-icon="mdi-phone"
           type="number"
         />
         <v-text-field
-            label="Correo electronico"
-            prepend-icon="mdi-email"
-            type="email"
+          label="Correo electronico"
+          prepend-icon="mdi-email"
+          type="email"
         />
         <v-select :items="items" label="Pais"></v-select>
         <v-text-field
-            label="Departaemtnto - Estado - Provincia"
-            prepend-icon="mdi-sign-real-estate"
+          label="Departaemtnto - Estado - Provincia"
+          prepend-icon="mdi-sign-real-estate"
         />
+        <v-text-field label="Ciudad" prepend-icon="mdi-city" />
         <v-text-field
-            label="Ciudad"
-            prepend-icon="mdi-city"
-        />
-        <v-text-field
-            label="Codigo postal"
-            prepend-icon="mdi-pound"
-            type="number"
+          label="Codigo postal"
+          prepend-icon="mdi-pound"
+          type="number"
         />
       </v-form>
     </v-card-text>
+    <v-card-actions>
+      <router-link to="/dashboard">
+        <v-btn class="info">Registrar</v-btn>
+      </router-link>
+    </v-card-actions>
   </v-app>
 </template>
 
@@ -59,6 +60,7 @@
 }
  */
 export default {
-  name: "FormEmpresa"
+  name: "FormEmpresa",
+  data: () => ({ items: ["Colobmia", "Ecuador", "Venezuela"] })
 };
 </script>
