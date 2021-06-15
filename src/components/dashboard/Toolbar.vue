@@ -26,7 +26,7 @@ export default {
   data: () => {
     return {
       menu: true,
-      items: ITEMS
+      paises: ITEMS
     };
   },
   computed: {

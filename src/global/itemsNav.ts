@@ -1,4 +1,3 @@
-// icon-icons
 export const ITEMS = [
   { title: "Puesto de practica", icon: "mdi-domain", link: "/" },
   { title: "Bitacora", icon: "mdi-book-arrow-up", link: "/" },

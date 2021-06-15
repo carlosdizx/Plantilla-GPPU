@@ -12,8 +12,6 @@
       <v-tabs align-with-title>
         <v-tab @click="changeForm(1)">Empresa</v-tab>
         <v-tab @click="changeForm(2)">Estudiante</v-tab>
-        <v-tab @click="changeForm(3)">Coordinador</v-tab>
-        <v-tab @click="changeForm(4)">Directivo</v-tab>
       </v-tabs>
     </template>
   </v-app-bar>

@@ -30,7 +30,7 @@
           prepend-icon="mdi-email"
           type="email"
         />
-        <v-select :items="items" label="Pais"></v-select>
+        <v-select :items="paises" item-text="name" label="Pais"></v-select>
         <v-text-field
           label="Departaemtnto - Estado - Provincia"
           prepend-icon="mdi-sign-real-estate"
@@ -52,15 +52,10 @@
 </template>
 
 <script>
-/**
- *  Country {
-    name: string;
-    code: string;
-    }
-}
- */
+import { PAISES } from "@/global/itemsForms";
+
 export default {
   name: "FormEmpresa",
-  data: () => ({ items: ["Colobmia", "Ecuador", "Venezuela"] })
+  data: () => ({ paises: PAISES })
 };
 </script>

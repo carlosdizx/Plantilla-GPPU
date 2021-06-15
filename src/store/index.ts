@@ -21,7 +21,7 @@ export default new Vuex.Store({
   },
   actions: {
     changeNavigation: ({ commit }) => commit("changeNavigationBar"),
-    changeForm: ({ commit },data) => commit("changeFormIndex",data)
+    changeForm: ({ commit }, data) => commit("changeFormIndex", data)
   },
   modules: {}
 });

@@ -12,7 +12,11 @@
         />
         <v-row>
           <v-col cols="4">
-            <v-select label="Tipo de documento" :items="tiposDoc" item-text="name"></v-select>
+            <v-select
+              label="Tipo de documento"
+              :items="tiposDoc"
+              item-text="name"
+            ></v-select>
           </v-col>
           <v-col cols="8">
             <v-text-field
@@ -24,11 +28,7 @@
         </v-row>
         <v-text-field label="Nombres" prepend-icon="mdi-form-textbox" />
         <v-text-field label="Apellidos" prepend-icon="mdi-form-textbox" />
-        <v-select
-            :items="generos"
-            item-text="name"
-            label="Genero"
-        />
+        <v-select :items="generos" item-text="name" label="Genero" />
         <v-text-field
           label="Correo electronico"
           type="email"
@@ -52,25 +52,13 @@
 </template>
 
 <script>
+import { UNIVERSIDADES,GENEROS,TIPOS_DOCUMENTO } from "@/global/itemsForms";
 export default {
   name: "FormEstudiante",
   data: () => ({
-    universidades: [
-      { id: 1, name: "Universidad Mariana" },
-      { id: 2, name: "Universidad de Nariño" }
-    ],
-    tiposDoc: [
-      { id: 1, name: "C.C." },
-      { id: 1, name: "T.I." },
-      { id: 1, name: "T.E." },
-      { id: 1, name: "C.E" },
-      { id: 1, name: "NIT" },
-      { id: 1, name: "Pasaporte" }
-    ],
-    generos: [
-      { id: 1, name: "Masculino" },
-      { id: 1, name: "Femenino" }
-    ]
+    universidades:UNIVERSIDADES,
+    generos:GENEROS,
+    tiposDoc:TIPOS_DOCUMENTO,
   })
 };
 </script>
