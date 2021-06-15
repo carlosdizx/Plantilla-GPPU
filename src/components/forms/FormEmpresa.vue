@@ -6,7 +6,11 @@
 		<v-card-text>
 			<v-form>
 				<v-text-field v-model="bussTem.nit" label="NIT" prepend-icon="mdi-domain" />
-				<v-text-field v-model="bussTem.nombre" label="Nombre" prepend-icon="mdi-form-textbox" />
+				<v-text-field
+					v-model="bussTem.nombre"
+					label="Nombre"
+					prepend-icon="mdi-form-textbox"
+				/>
 				<v-file-input
 					v-model="bussTem.rut"
 					accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps"
@@ -60,15 +64,11 @@
 			</v-form>
 		</v-card-text>
 		<v-card-actions>
-			<router-link to="/dashboard" custom v-slot="{ navigate }">
-				<v-btn @click="navigate" @keypress.enter="navigate" role="link" color="info">
-					Registrar
-				</v-btn>
-			</router-link>
-			<v-btn @click="containsErrors">
-				probar
+			<v-btn @click="containsErrors" role="link" color="info" :disabled="state">
+				Registrar
 			</v-btn>
 		</v-card-actions>
+		<h1>estado: {{ state }}</h1>
 	</v-app>
 </template>
 
@@ -80,18 +80,19 @@
 		data: () => ({
 			paises: PAISES,
 			bussTem: {
-				nit: '',
-				nombre: '',
+				nit: '800.197.268-4',
+				nombre: 'Arena Center',
 				rut: null,
-				ccRepresent: null,
+				ccRepresent: 1082749257,
 				acreditacion: null,
-				phone: null,
-				email: '',
-				pais: '',
-				departaemtnto: '',
-				ciudad: '',
-				codPostal: null,
+				phone: 3163930876,
+				email: 'arena@center.com',
+				pais: 'Colombia',
+				departaemtnto: 'Nariño',
+				ciudad: 'Pasto',
+				codPostal: 520002,
 			},
+			state: false,
 		}),
 		methods: {
 			containsErrors() {
@@ -103,7 +104,9 @@
 					this.bussTem.departaemtnto.trim() === '' ||
 					this.bussTem.ciudad.trim() === ''
 				) {
-					console.log(this.bussTem);
+					console.log('Complete los campos');
+				} else {
+					console.log('Ok!');
 				}
 			},
 			isNumber(evt) {
