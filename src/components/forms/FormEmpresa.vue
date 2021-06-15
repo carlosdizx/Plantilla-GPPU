@@ -6,7 +6,7 @@
 		<v-card-text>
 			<v-form>
 				<v-text-field v-model="bussTem.nit" label="NIT" prepend-icon="mdi-domain" />
-				<v-text-field label="Nombre" prepend-icon="mdi-form-textbox" />
+				<v-text-field v-model="bussTem.nombre" label="Nombre" prepend-icon="mdi-form-textbox" />
 				<v-file-input
 					v-model="bussTem.rut"
 					accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps"
@@ -96,16 +96,14 @@
 		methods: {
 			containsErrors() {
 				if (
-					this.bussTem.nit.trim() !== '' ||
-					this.bussTem.nombre.trim() !== '' ||
-					!this.bussTem.rut !== '' ||
-					this.bussTem.acreditacion.trim() !== '' ||
-					this.bussTem.email.trim() !== '' ||
-					this.bussTem.departaemtnto.trim() !== '' ||
-					this.bussTem.ciudad.trim() !== ''
+					this.bussTem.nit.trim() === '' ||
+					this.bussTem.nombre.trim() === '' ||
+					!this.bussTem.rut ||
+					this.bussTem.email.trim() === '' ||
+					this.bussTem.departaemtnto.trim() === '' ||
+					this.bussTem.ciudad.trim() === ''
 				) {
 					console.log(this.bussTem);
-					alert('Complete todos los campos');
 				}
 			},
 			isNumber(evt) {
