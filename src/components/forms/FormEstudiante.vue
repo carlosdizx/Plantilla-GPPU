@@ -40,7 +40,7 @@
 								rules="required|min:5|max:15"
 							>
 								<v-text-field
-									v-model="stuTemp.documento"
+									v-model.number="stuTemp.documento"
 									label="Documento"
 									@keypress="isNumber($event)"
 									type="number"
@@ -134,7 +134,7 @@
 						rules="required|min:5|max:15"
 					>
 						<v-text-field
-							v-model="stuTemp.celular"
+							v-model.number="stuTemp.celular"
 							label="Celular"
 							type="number"
 							@keypress="isNumber($event)"
@@ -212,14 +212,14 @@
 			stuTemp: {
 				universidad: '',
 				tipoDoc: '',
-				documento: null,
-				nombres: '',
-				apellidos: '',
+				documento: 1082749257,
+				nombres: 'Carlos Ernesto',
+				apellidos: 'Díaz Basante',
 				genero: '',
-				correo: '',
-				ciudad: '',
-				direccion: '',
-				celular: null,
+				correo: 'carlodiaz@umariana.edu.co',
+				ciudad: 'Pasto',
+				direccion: 'Calle 18 # 35 - 06',
+				celular: 3163930876,
 				hojaDeVida: null,
 			},
 		}),
