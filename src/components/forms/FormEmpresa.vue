@@ -150,7 +150,7 @@
 				</v-form>
 			</v-card-text>
 			<v-card-actions>
-				<v-btn @click="containsErrors" role="link" color="info" :disabled="invalid">
+				<v-btn @click="submit" role="link" color="info" :disabled="invalid">
 					Registrar
 				</v-btn>
 			</v-card-actions>
@@ -219,19 +219,8 @@
 			state: false,
 		}),
 		methods: {
-			containsErrors() {
-				if (
-					this.bussTem.nit.trim() === '' ||
-					this.bussTem.nombre.trim() === '' ||
-					!this.bussTem.rut ||
-					this.bussTem.email.trim() === '' ||
-					this.bussTem.departaemtnto.trim() === '' ||
-					this.bussTem.ciudad.trim() === ''
-				) {
-					console.log('Complete los campos');
-				} else {
-					console.log('Ok!');
-				}
+			submit() {
+        console.log('ok👍')
 			},
 			isNumber(evt) {
 				IS_NUMBER(evt);
