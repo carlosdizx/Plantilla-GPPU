@@ -28,11 +28,23 @@
       </v-form>
     </v-card-text>
     <v-card-actions>
-      <router-link tag="button" to="/dashboard">
-        <v-btn color="info">Iniciar sesion</v-btn>
+      <router-link to="/dashboard" v-slot="{ navigate }" custom>
+        <v-btn
+          @click="navigate"
+          @keypress.enter="navigate"
+          role="link"
+          color="info"
+          >Iniciar sesion</v-btn
+        >
       </router-link>
-      <router-link tag="button" to="/forms">
-        <v-btn color="success">Registrarme</v-btn>
+      <router-link to="/forms" v-slot="{ navigate }" custom>
+        <v-btn
+          @click="navigate"
+          @keypress.enter="navigate"
+          role="link"
+          color="success"
+          >Registrarme</v-btn
+        >
       </router-link>
       <v-spacer></v-spacer>
     </v-card-actions>

@@ -44,21 +44,21 @@
       </v-form>
     </v-card-text>
     <v-card-actions>
-      <router-link tag="button" to="/dashboard">
-        <v-btn class="info">Registrar</v-btn>
+      <router-link to="/dashboard" custom v-slot="{ navigate }">
+        <v-btn @click="navigate" @keypress.enter="navigate" role="link" color="info">Registrar</v-btn>
       </router-link>
     </v-card-actions>
   </v-app>
 </template>
 
 <script>
-import { UNIVERSIDADES,GENEROS,TIPOS_DOCUMENTO } from "@/global/itemsForms";
+import { UNIVERSIDADES, GENEROS, TIPOS_DOCUMENTO } from "@/global/itemsForms";
 export default {
   name: "FormEstudiante",
   data: () => ({
-    universidades:UNIVERSIDADES,
-    generos:GENEROS,
-    tiposDoc:TIPOS_DOCUMENTO,
+    universidades: UNIVERSIDADES,
+    generos: GENEROS,
+    tiposDoc: TIPOS_DOCUMENTO
   })
 };
 </script>

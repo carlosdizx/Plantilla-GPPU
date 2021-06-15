@@ -24,8 +24,5 @@ export default {
   computed: {
     ...mapState(["form"])
   }
-  ,created() {
-    console.log(this.form)
-  }
 };
 </script>

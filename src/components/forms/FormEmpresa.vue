@@ -44,8 +44,8 @@
       </v-form>
     </v-card-text>
     <v-card-actions>
-      <router-link tag="button" to="/dashboard">
-        <v-btn class="info">Registrar</v-btn>
+      <router-link to="/dashboard" custom v-slot="{ navigate }">
+        <v-btn @click="navigate" @keypress.enter="navigate" role="link" color="info">Registrar</v-btn>
       </router-link>
     </v-card-actions>
   </v-app>

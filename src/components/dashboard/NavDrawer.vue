@@ -43,7 +43,7 @@ export default {
   name: "NavDrawer",
   data() {
     return {
-      paises: ITEMS,
+      items: ITEMS,
       numero: Math.floor(Math.random() * (2 - 1 + 1) + 1),
       userTemplate: {
         nombre: "Carlos Ernesto Díaz Basante",
