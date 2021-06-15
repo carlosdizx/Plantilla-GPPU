@@ -76,17 +76,17 @@
 
 	extend('digits', {
 		...digits,
-		message: '{_field_} needs to be {length} digits. ({_value_})',
+		message: '{_field_} Se necesita {length} digitos. ({_value_})',
 	});
 
 	extend('required', {
 		...required,
-		message: '{_field_} can not be empty',
+		message: '{_field_} no puede estar vacio',
 	});
 
 	extend('max', {
 		...max,
-		message: '{_field_} may not be greater than {length} characters',
+		message: '{_field_} {length} maximo de caracteres',
 	});
 
 	extend('min', {
