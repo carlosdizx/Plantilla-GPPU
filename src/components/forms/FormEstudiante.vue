@@ -12,7 +12,7 @@
         />
         <v-row>
           <v-col cols="4">
-            <v-select :items="tiposDoc" item-text="name"></v-select>
+            <v-select label="Tipo de documento" :items="tiposDoc" item-text="name"></v-select>
           </v-col>
           <v-col cols="8">
             <v-text-field
@@ -44,7 +44,7 @@
       </v-form>
     </v-card-text>
     <v-card-actions>
-      <router-link to="/dashboard">
+      <router-link tag="button" to="/dashboard">
         <v-btn class="info">Registrar</v-btn>
       </router-link>
     </v-card-actions>
