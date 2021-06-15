@@ -25,7 +25,7 @@
 					<validation-provider
 						v-slot="{ errors }"
 						name="Contraseña"
-						rules="required|min:8"
+						rules="required|min:8|max:60"
 					>
 						<v-text-field
 							v-model="userTemplate.password"
