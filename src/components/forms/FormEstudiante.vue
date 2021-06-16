@@ -5,7 +5,7 @@
 				<v-card-title>Registro para estudiante</v-card-title>
 			</v-card>
 			<v-card-text>
-				<v-form>
+				<v-form @submit.prevent="submit">
 					<validation-provider v-slot="{ errors }" name="Universidad" rules="required">
 						<v-select
 							v-model="stuTemp.universidad"

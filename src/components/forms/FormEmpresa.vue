@@ -5,7 +5,7 @@
 				<v-card-title>Registro para empresas</v-card-title>
 			</v-card>
 			<v-card-text>
-				<v-form>
+				<v-form @submit.prevent="submit">
 					<validation-provider
 						v-slot="{ errors }"
 						name="nit"
