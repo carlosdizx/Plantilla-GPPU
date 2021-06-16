@@ -17,7 +17,7 @@
 			</v-avatar>
 		</v-list-item>
 		<v-card-actions>
-			<v-btn color="success" outlined rounded>
+			<v-btn :color="color" outlined rounded>
 				{{ buttonText }}
 			</v-btn>
 		</v-card-actions>
