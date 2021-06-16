@@ -48,7 +48,7 @@
 				userTemplate: {
 					nombre: 'Carlos Ernesto Díaz Basante',
 					token: 'soloUsoPostgreSQL',
-					rol: 'Estudiante',
+					rol: 'Representante de la empresa',
 				},
 			};
 		},

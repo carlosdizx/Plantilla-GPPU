@@ -1,6 +1,6 @@
 export const UNIVERSIDADES = [
-	{ id: 1, name: 'Universidad Mariana' },
-	{ id: 2, name: 'Universidad de Nariño' },
+	{ id: 1, name: 'Universidad Mariana🤑' },
+	{ id: 2, name: 'Universidad de Nariño😈' },
 ];
 export const TIPOS_DOCUMENTO = [
 	{ id: 1, name: 'C.C.' },
@@ -15,6 +15,9 @@ export const PAISES = [
 	{ id: 1, name: 'Colobmia' },
 	{ id: 2, name: 'Ecuador' },
 	{ id: 3, name: 'Venezuela' },
+	{ id: 4, name: 'Peru' },
+	{ id: 5, name: 'Panama' },
+	{ id: 6, name: 'Brasil' },
 ];
 
 export const GENEROS = [
@@ -24,5 +27,12 @@ export const GENEROS = [
 	{ id: 4, name: 'Pansexual ' },
 	{ id: 5, name: 'Transgénero ' },
 	{ id: 6, name: 'Asexual ' },
-	{ id: 6, name: 'Otro ' },
+	{ id: 7, name: 'Queer ' },
+	{ id: 8, name: 'Arromántico ' },
+	{ id: 9, name: 'Androsexual ' },
+	{ id: 10, name: 'Ginosexual ' },
+	{ id: 11, name: 'Bicurioso ' },
+	{ id: 12, name: 'Demisexual ' },
+	{ id: 13, name: 'Poliamoroso ' },
+	{ id: 14, name: 'Otro ' },
 ];
