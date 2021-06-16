@@ -11,22 +11,6 @@
 				<v-icon>mdi-export</v-icon>
 			</v-btn>
 		</v-app-bar>
-    <CardAction
-        title="Responsable de practicantes"
-        subTitle="Agregar responsable"
-        description="Registrar un responsable de los practicantes"
-        color="green"
-        icon="mdi-account-circle"
-        buttonText="Registrar"
-    />
-		<CardAction
-			title="Responsable de practicantes"
-			subTitle="Eliminar responsable"
-			description="Remover un responsable de los practicantes"
-			color="red"
-			icon="mdi-account-circle"
-			buttonText="Eliminar"
-		/>
 	</v-app>
 </template>
 

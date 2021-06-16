@@ -1,5 +1,5 @@
 <template>
-	<v-card class="mx-auto pt-6 mt-12" max-width="344" outlined>
+	<v-card class="mx-auto pt-6 mt-12" outlined>
 		<v-list-item three-line>
 			<v-list-item-content>
 				<div class="text-overline mb-4">
@@ -13,7 +13,7 @@
 				</v-list-item-subtitle>
 			</v-list-item-content>
 			<v-avatar size="80" :color="color">
-				<v-icon size="80" dark>{{ icon }}</v-icon>
+				<v-icon size="70" dark>{{ icon }}</v-icon>
 			</v-avatar>
 		</v-list-item>
 		<v-card-actions>

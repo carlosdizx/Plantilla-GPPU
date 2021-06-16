@@ -1,18 +1,15 @@
 <template>
 	<v-app>
-		<Toolbar />
-		<NavDrawer />
+		<DashRepre />
 	</v-app>
 </template>
 
 <script>
-	import NavDrawer from '@/components/dashboard/NavDrawer';
-	import Toolbar from "@/components/dashboard/Toolbar";
+	import DashRepre from '@/components/dashboard/Representante/DashRepre';
 	export default {
 		name: 'Dashboard',
 		components: {
-			NavDrawer,
-			Toolbar,
+			DashRepre,
 		},
 	};
 </script>
