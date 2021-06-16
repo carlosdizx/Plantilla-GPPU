@@ -13,15 +13,21 @@ export default new Vuex.Store({
 			type: Number,
 			default: 1,
 		},
+		rol: {
+			type: Number,
+			default: 1,
+		},
 	},
 	mutations: {
 		changeNavigationBar: (state) =>
 			(state.navigation.default = !state.navigation.default),
 		changeFormIndex: (state, payload) => (state.form.default = payload),
+		changeRolIndex: (state, payload) => (state.rol.default = payload),
 	},
 	actions: {
 		changeNavigation: ({ commit }) => commit('changeNavigationBar'),
 		changeForm: ({ commit }, data) => commit('changeFormIndex', data),
+		changeRol: ({ commit }, data) => commit('changeRolIndex'),
 	},
 	modules: {},
 });
