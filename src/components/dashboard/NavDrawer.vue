@@ -22,14 +22,12 @@
 </template>
 
 <script>
-	import { ITEMS } from '@/global/itemsNav';
 	import { mapState } from 'vuex';
 	import NavItems from './NavItems';
 	export default {
 		name: 'NavDrawer',
 		data() {
 			return {
-				items: ITEMS,
 				numero: Math.floor(Math.random() * (2 - 1 + 1) + 1),
 				userTemplate: {
 					nombre: 'Carlos Ernesto Díaz Basante',

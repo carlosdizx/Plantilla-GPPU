@@ -15,7 +15,7 @@ export default new Vuex.Store({
 		},
 		rol: {
 			type: Number,
-			default: 1,
+			default: 2,
 		},
 	},
 	mutations: {

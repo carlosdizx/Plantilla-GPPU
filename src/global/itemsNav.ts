@@ -13,6 +13,20 @@ export const ITEMS_ESTUDIANTE = [
 ];
 
 export const ITEMS_REPRESENTANTE = [
+	{ title: 'Encargados', icon: 'mdi-account-hard-hat', value: 1 },
+	{ title: 'Informes', icon: 'mdi-file-document', value: 2 },
+	{ title: 'Renovar convenio', icon: 'mdi-handshake', value: 3 },
+	{ title: 'Necesito ayuda', icon: 'mdi-help', value: 4 },
+];
+
+export const ITEMS_ENCARGADO = [
+	{ title: 'Practicantes', icon: 'mdi-account-hard-hat', value: 1 },
+	{ title: 'Informes', icon: 'mdi-file-document', value: 2 },
+	{ title: 'Renovar convenio', icon: 'mdi-handshake', value: 3 },
+	{ title: 'Necesito ayuda', icon: 'mdi-help', value: 4 },
+];
+
+export const ITEMS_COORDINADOR = [
 	{ title: 'Responsables', icon: 'mdi-account-hard-hat', value: 1 },
 	{ title: 'Informes', icon: 'mdi-file-document', value: 2 },
 	{ title: 'Renovar convenio', icon: 'mdi-handshake', value: 3 },
