@@ -1,5 +1,5 @@
 <template>
-	<v-navigation-drawer app v-model="navigation.default">
+	<v-navigation-drawer dark app v-model="navigation.default">
 		<!--ITEMS DE NAVEGACION -->
 
 		<v-list-item>
