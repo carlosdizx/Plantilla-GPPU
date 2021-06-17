@@ -1,51 +1,32 @@
 <template>
 	<v-app>
-		<div class="container">
-			<v-row wrap>
-				<v-col>
-					<CardAction
-						title="Responsable de practicantes"
-						subTitle="Agregar responsable"
-						description="Registrar un responsable de los practicantes"
-						color="green"
-						icon="mdi-account-circle"
-						buttonText="Registrar"
-						:buttonAction="registrar"
-					/>
-				</v-col>
-				<v-col>
-					<CardAction
-						title="Responsable de practicantes"
-						subTitle="Eliminar responsable"
-						description="Remover un responsable de los practicantes"
-						color="red"
-						icon="mdi-account-circle"
-						buttonText="eliminar"
-						:buttonAction="eliminar"
-					/>
-				</v-col>
-				<v-col>
-					<CardAction
-						title="Responsable de practicantes"
-						subTitle="Actualizar datos"
-						description="Cambiar datos de los responsable de practicantes"
-						color="orange"
-						icon="mdi-file-document-edit"
-						buttonText="Actualizar"
-						:buttonAction="actualizar"
-					/>
-				</v-col>
-			</v-row>
+		<div class="container mt-12">
+			<!--
+			<CardAction
+				ancho="500"
+				title="Responsable de practicantes"
+				subTitle="Agregar responsable"
+				description="Registrar un responsable de los practicantes"
+				color="green"
+				icon="mdi-account-circle"
+				buttonText="Registrar"
+				:buttonAction="registrar"
+			/>
+			-->
+			<ListadoEncargado />
+			<hr />
 		</div>
 	</v-app>
 </template>
 
 <script>
 	import CardAction from '../../general/CardAction';
+	import ListadoEncargado from './ListadoEncargado';
 	export default {
 		name: 'AccionesRepre',
 		components: {
 			CardAction,
+			ListadoEncargado,
 		},
 		methods: {
 			registrar() {

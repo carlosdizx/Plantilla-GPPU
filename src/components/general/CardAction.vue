@@ -1,5 +1,5 @@
 <template>
-	<v-card class="mx-auto  pt-6 mt-12" max-width="344" outlined>
+	<v-card class="mx-auto mt-12 mb-5" :max-width="ancho" outlined>
 		<v-list-item three-line>
 			<v-list-item-content>
 				<div class="text-overline mb-4">
@@ -29,6 +29,7 @@
 		name: 'CardAction',
 		data: () => ({}),
 		props: {
+		  ancho: null,
 			title: String,
 			subTitle: String,
 			description: String,
