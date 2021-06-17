@@ -34,5 +34,6 @@ export const GENEROS = [
 	{ id: 11, name: 'Bicurioso ' },
 	{ id: 12, name: 'Demisexual ' },
 	{ id: 13, name: 'Poliamoroso ' },
+	{ id: 13, name: 'Grasosexual ' },
 	{ id: 14, name: 'Otro ' },
 ];

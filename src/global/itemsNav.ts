@@ -1,15 +1,15 @@
 export const ITEMS_ESTUDIANTE = [
-	{ title: 'Puesto de practica', icon: 'mdi-domain', link: '/' },
-	{ title: 'Bitacora', icon: 'mdi-book-arrow-up', link: '/' },
-	{ title: 'Tareas', icon: 'mdi-briefcase', link: '/' },
+	{ title: 'Puesto de practica', icon: 'mdi-domain', value: 1 },
+	{ title: 'Bitacora', icon: 'mdi-book-arrow-up', value: 2 },
+	{ title: 'Tareas', icon: 'mdi-briefcase', value: 3 },
 	{
-		title: 'Calificaciones e informes',
+		title: 'Informes',
 		icon: 'mdi-google-analytics',
-		link: '/',
+		value: 4,
 	},
-	{ title: 'Mi perfil', icon: 'mdi-briefcase', link: '/' },
-	{ title: 'Paz y salvo', icon: 'mdi-google-analytics', link: '/' },
-	{ title: 'Acerca', icon: 'mdi-information', link: '/' },
+	{ title: 'Mi perfil', icon: 'mdi-briefcase', value: 5 },
+	{ title: 'Paz y salvo', icon: 'mdi-google-analytics', value: 6 },
+	{ title: 'Acerca', icon: 'mdi-information', value: 7 },
 ];
 
 export const ITEMS_REPRESENTANTE = [

@@ -1,5 +1,5 @@
 <template>
-	<v-app-bar app src="@/assets/difuminado.jpg">
+	<v-app-bar app dark src="@/assets/difuminado.jpg">
 		<v-toolbar-title>Soy</v-toolbar-title>
 		<v-spacer></v-spacer>
 		<v-btn icon>

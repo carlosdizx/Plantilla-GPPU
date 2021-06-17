@@ -17,28 +17,14 @@
 
 		<v-divider></v-divider>
 		<!--ITEMS DE NAVEGACION -->
-		<v-list dense nav>
-			<v-list-item v-for="item in items" :key="item.title">
-				<v-row>
-					<v-list-item-icon>
-						<v-icon>{{ item.icon }}</v-icon>
-					</v-list-item-icon>
-					<router-link :to="item.link">
-						<v-row class="pt-4">
-							<v-list-item-content>
-								<v-list-item-title>{{ item.title }}</v-list-item-title>
-							</v-list-item-content>
-						</v-row>
-					</router-link>
-				</v-row>
-			</v-list-item>
-		</v-list>
+		<NavItems />
 	</v-navigation-drawer>
 </template>
 
 <script>
 	import { ITEMS } from '@/global/itemsNav';
 	import { mapState } from 'vuex';
+	import NavItems from './NavItems';
 	export default {
 		name: 'NavDrawer',
 		data() {
@@ -48,12 +34,19 @@
 				userTemplate: {
 					nombre: 'Carlos Ernesto Díaz Basante',
 					token: 'soloUsoPostgreSQL',
-					rol: 'xxxxxxxxx',
+					rol: '',
 				},
 			};
 		},
+		components: {
+			NavItems,
+		},
 		computed: {
-			...mapState(['navigation']),
+			...mapState(['navigation', 'rol']),
+		},
+		mounted() {
+			this.userTemplate.rol =
+				this.rol.default === 1 ? 'Estudiante' : this.rol.default === 2 ? 'Representante' : '';
 		},
 	};
 </script>
