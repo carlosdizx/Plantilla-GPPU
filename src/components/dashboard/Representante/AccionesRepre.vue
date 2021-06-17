@@ -1,18 +1,6 @@
 <template>
 	<v-app>
 		<div class="container mt-12">
-			<!--
-			<CardAction
-				ancho="500"
-				title="Responsable de practicantes"
-				subTitle="Agregar responsable"
-				description="Registrar un responsable de los practicantes"
-				color="green"
-				icon="mdi-account-circle"
-				buttonText="Registrar"
-				:buttonAction="registrar"
-			/>
-			-->
 			<ListadoEncargado />
 			<hr />
 		</div>
