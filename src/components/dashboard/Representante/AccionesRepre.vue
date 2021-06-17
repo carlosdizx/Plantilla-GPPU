@@ -2,7 +2,6 @@
 	<v-app>
 		<div class="container mt-12">
 			<ListadoEncargado />
-			<hr />
 		</div>
 	</v-app>
 </template>
