@@ -43,7 +43,7 @@
 <script>
 	import CardAction from '../../general/CardAction';
 	export default {
-		name: 'HomeRepre',
+		name: 'AccionesRepre',
 		components: {
 			CardAction,
 		},
